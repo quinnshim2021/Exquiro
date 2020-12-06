@@ -1,5 +1,5 @@
 # Exquiro
-App Script for Google Docs which uses Context Based Search for more targeted definitions. Contributers: Quinn Shim, Adrian Konstantinov, Anam Khan, Matthew Walsh
+App Script for Google Docs which uses Context Based Search for more targeted definitions. Contributors: Quinn Shim, Adrian Konstantinov, Anam Khan, Matthew Walsh
 
 # Dependencies
 - Rake
