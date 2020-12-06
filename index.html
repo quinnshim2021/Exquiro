@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
+    <style>
+    .container {
+    padding-top: 20px;
+    text-align: center;
+    }
+    .button {
+    font-family: 'Allerta Stencil';
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 22px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    }
+    
+    .button1 {
+    border-radius: 25px;
+    background-color: white; 
+    color: #528EF4; 
+    border: 2px solid #528EF4;
+    }
+    
+    .button1:hover {
+    background-color: #528EF4;
+    color: white;
+    }
+    
+    .result {
+    font-size: 17px;
+    }
+    #text_title {
+    font-family: 'Allerta Stencil';
+    font-size: 18px;
+    color: #528EF4;
+    padding-top: 10px;
+    padding-left: 10px;
+    }
+    
+    #tag-style ul {
+    list-style: none;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    }
+
+    #tag-style li {
+    display: inline-block;
+    padding-right: 10px;
+    }
+   
+    
+    </style>
+  </head>
+  <body>
+  <div class="container">
+  <button class="button button1" id="run">Search</button>
+  </div>
+  
+  <div class="result">
+    <p id="text_title">Context</p>
+    <div id=tag-style>
+    <ul id="tags"></ul>
+    </div>
+    <hr />
+    <p id="text1"></p>
+    <a href="javascript:void(0)" target="_blank" id="text1_link"></a>
+    <p id="text2"></p>
+    <a href="javascript:void(0)" target="_blank" id="text2_link"></a>
+    <p id="text3"></p>
+    <a href="javascript:void(0)" target="_blank" id="text3_link"></a>
+    </div>
+    
+    <div id="content"></div>
+
+
+    <!-- links javascript -->
+    <?!= HtmlService.createHtmlOutputFromFile('SidebarJavascript').getContent(); ?>
+  </body>
+</html>
+
